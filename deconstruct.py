@@ -20,10 +20,10 @@ layers_to_use = [
 config = {
     "image_path": "images/noise.jpg",
     "layers": layers_to_use,
-    "octave_scale": 1.1,  
-    "num_octaves": 25,  
-    "iterations": 20,  
-    "lr": 0.05,
+    "octave_scale": 1.2,  
+    "num_octaves": 15,  
+    "iterations": 100,  
+    "lr": 0.03,
     "max_rotation": 1.5,
     "gradient_smoothing_kernel_size": 3,  ## optional
     "gradient_smoothing_coeff": 0.5,       ## optional
@@ -42,9 +42,9 @@ for i in range(len(classnames_index)):
 fig, ax = plt.subplots(nrows= 1, ncols= len(classnames_index), figsize=(18, 6))
 for i in range(len(all_outs)):
     ax.flat[i].imshow(all_outs[i])
-    ax.flat[i].set_title(list(classnames_index)[i], fontsize = 11)
+    ax.flat[i].set_title(list(classnames_index)[i], fontsize = 16)
     ax.flat[i].axis("off")
 
 plt.show()
-fig.tight_layout()
+# fig.tight_layout()
 fig.savefig("images/vis.jpg")
