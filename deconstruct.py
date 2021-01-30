@@ -21,7 +21,7 @@ config = {
     "image_path": "images/noise.jpg",
     "layers": layers_to_use,
     "octave_scale": 1.1,  
-    "num_octaves": 27,  
+    "num_octaves": 25,  
     "iterations": 20,  
     "lr": 0.05,
     "max_rotation": 1.5,
@@ -36,10 +36,10 @@ for i in range(len(classnames_index)):
 
     out = dreamy_boi.deep_dream(config)  
     all_outs.append(out)
-    # plt.imshow(out)
-    # plt.show()
+    plt.imshow(out)
+    plt.show()
 
-fig, ax = plt.subplots(nrows= 2, ncols= len(classnames_index)//2, figsize=(18, 6))
+fig, ax = plt.subplots(nrows= 1, ncols= len(classnames_index), figsize=(18, 6))
 for i in range(len(all_outs)):
     ax.flat[i].imshow(all_outs[i])
     ax.flat[i].set_title(list(classnames_index)[i], fontsize = 11)
