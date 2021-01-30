@@ -4,7 +4,7 @@ classnames_index ={
     # "l_brow": 2,
     "eyebrow":3,
     # "l_eye": 4,
-    "eyes": [4,5],
+    "eyes": 4,
     # "eye_g": 6,
     # "l_ear": 7,
     "ears":8,
