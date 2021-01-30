@@ -1,5 +1,4 @@
-# reverse-engineering-face-segmentation
-turning a face segmentation model inside out
+## What does a model look for when segmenting a face ?
 
 <img src = "images/vis.jpg">
 
