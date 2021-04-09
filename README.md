@@ -2,6 +2,7 @@
 
 <img src = "images/vis.jpg">
 
+:exclamation: This project was made on an older version of [torch-dreams](https://github.com/Mayukhdeb/torch-dreams), so it might not work:exclamation:
 ## Breaking it down
 
 ### Eyebrows
